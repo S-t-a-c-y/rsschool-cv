@@ -11,7 +11,7 @@ I am motivated and have a strong desire to learn and grow as a frontend develope
 ## Skills
 + HTML, CSS
 + Git, GitHub
-+ Java
++ Java, JavaScript
 + IntelliJ IDEA, VS Code
 + MySQL
 
@@ -32,5 +32,15 @@ I am motivated and have a strong desire to learn and grow as a frontend develope
 ```
 
 ## Education
++ HTML, CSS tutotrial [w3schools.com](https://www.w3schools.com/)
++ The JavaScript Language [javascript.info](https://javascript.info/)
++ Git + GitHub for QA engeneer [udemy.com](https://www.udemy.com/course/git-github-qa-engineers/?couponCode=ACCAGE0923)
++ Java [redrover.school](https://redrover.school/)
+
+
 
 ## Languages
++ **Ukrainian** - Native
++ **Russian** - Native
++ **Polish** - Intermediate
++ **English** - Intermediate
