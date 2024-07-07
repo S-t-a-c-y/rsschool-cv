@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>CV</title>
 </head>
+
 <body>
-   Anastasiia Tytarenko
+    <div class="wrapper">
+        <header class="header">
+            <div class="foto">
+                <img id="foto-cv" src="assets/img/avatar.jpg" alt="cv-foto">
+            </div>
+            <div class="name">
+                <h1>Anastasiia Tytarenko</h1>
+                <p>Junior Frontend Developer</p>
+            </div>
+        </header>
+
+        <main>
+            <aside class="aside-section">
+                <section class="aside-main">
+                    <div class="section-name">
+                        <h2>Contacts</h2>
+                    </div>
+                    <nav class="contact-list">
+                        <ul>
+                            <li class="contact">
+                                <div class="contact-icon">
+                                    <img class="icon" src="assets/img/gmail.256x256.png" alt="gmail">
+                                </div>
+                                <div class="contact-link">
+                                    <a href="https://mail.google.com/mail" target="_blank">anastasiia3457@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="contact-icon">
+                                    <img class="icon" src="assets/img/discord.256x256.png" alt="discord">
+                                </div>
+                                <div class="contact-link">
+                                    <a href="https://discord.com/channels/@tytarenko_" target="_blank">discord:
+                                        Anastasiia(@S-t-a-c-y)</a>
+                                </div>
+                            </li>
+                            <li class="contact">
+                                <div class="contact-icon">
+                                    <img class="icon" src="assets/img/github.256x256.png" alt="github">
+                                </div>
+                                <div class="contact-link">
+                                    <a href="https://github.com/S-t-a-c-y" target="_blank">github: S-t-a-c-y</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="aside-main">
+                    <div class="section-name">
+                        <h2>Languages</h2>
+                    </div>
+                    <div class="languages">
+                        <ul class="languages-list">
+                            <li>Ukranian - Native</li>
+                            <li>Russian - Native</li>
+                            <li>English - Intermediate</li>
+                            <li>Polish - Intermediate</li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+
+            <div class="main">
+                <section class="section-main">
+                    <h2 class="section-name">About me</h2>
+                    <p>
+                        I am motivated and have a strong desire to learn and grow as a frontend developer. I am excited
+                        to bring my skills and experience to a new level and contribute to the development of innovative
+                        and user-friendly web applications.
+                    </p>
+                </section>
+
+                <section class="section-main">
+                    <h2 class="section-name">Skills</h2>
+                    <ul class="section-list">
+                        <li>HTML, CSS</li>
+                        <li>Git, GitHub</li>
+                        <li>Java, JavaScript</li>
+                        <li>IntelliJ IDEA, VS Code</li>
+                        <li>SQL</li>
+                    </ul>
+                </section>
+
+                <section class="section-main">
+                    <h2 class="section-name">Code example</h2>
+                    <pre>
+                        <code class="code">
+    function mergeArrays(arr1, arr2) {
+        const res = [];
+        if (arr1[0] > arr1[arr1.length - 1]) arr1 = arr1.reverse();
+        if (arr2[0] > arr2[arr2.length - 1]) arr2 = arr2.reverse();
+        
+        let i = 0, j = 0, r = 0;
+        
+        while (i &lt; arr1.length && j &lt; arr2.length) {
+            if (arr1[i] === arr2[j]) {
+            i++;
+            } else {
+            res[r++] = arr1[i] &lt; arr2[j] ? arr1[i++] : arr2[j++]
+            }
+        }
+        
+        return i &lt; arr1.length ? res.concat(arr1.slice(i)) : res.concat(arr2.slice(j));
+    }      
+                        </code>
+                    </pre>
+                </section>
+
+                <section class="section-main">
+                    <h2 class="section-name">Education</h2>
+                    <ul class="section-list">
+                        <li>HTML, CSS tutotrial - <a href="https://www.w3schools.com/"> w3school.com</a></li>
+                        <li>The JavaScript Language - <a href="https://javascript.info/">javascript.info</a></li>
+                        <li>Git + GitHub for QA engeneer - <a
+                                href="https://www.udemy.com/course/git-github-qa-engineers/?couponCode=ACCAGE0923">udemy.com</a>
+                        </li>
+                        <li>Java - <a href="https://redrover.school/">redrower.school</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="link-github">
+                <div>
+                    <p> Created in 2024</p>
+                </div>
+
+                <div>
+                    <a href="https://github.com/S-t-a-c-y" target="_blank">
+                        <img class="icon" src="assets/img/github.256x256.png" alt="icon-github">
+                    </a>
+                </div>
+            </div>
+            <div class="link-rs">
+                <a href="https://rs.school/" target="_blank">   
+                    <img class="logo-school" src="assets/img/content_rs_school_js.webp" alt="logo-school">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
