@@ -103,12 +103,12 @@
                         <code class="code">
     function mergeArrays(arr1, arr2) {
         const res = [];
-        if (arr1[0] > arr1[arr1.length - 1]) arr1 = arr1.reverse();
-        if (arr2[0] > arr2[arr2.length - 1]) arr2 = arr2.reverse();
+        if (arr1[0] &gt; arr1[arr1.length - 1]) arr1 = arr1.reverse();
+        if (arr2[0] &gt; arr2[arr2.length - 1]) arr2 = arr2.reverse();
         
         let i = 0, j = 0, r = 0;
         
-        while (i &lt; arr1.length && j &lt; arr2.length) {
+        while (i &lt; arr1.length &amp;&amp; j &lt; arr2.length) {
             if (arr1[i] === arr2[j]) {
             i++;
             } else {
