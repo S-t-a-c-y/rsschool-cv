@@ -125,9 +125,9 @@
         const res = [];
         if (arr1[0] &gt; arr1[arr1.length - 1]) arr1 = arr1.reverse();
         if (arr2[0] &gt; arr2[arr2.length - 1]) arr2 = arr2.reverse();
-        
+
         let i = 0, j = 0, r = 0;
-        
+
         while (i &lt; arr1.length &amp;&amp; j &lt; arr2.length) {
             if (arr1[i] === arr2[j]) {
             i++;
@@ -135,7 +135,7 @@
             res[r++] = arr1[i] &lt; arr2[j] ? arr1[i++] : arr2[j++]
             }
         }
-        
+
         return i &lt; arr1.length ? res.concat(arr1.slice(i)) : res.concat(arr2.slice(j));
     }
                         </code>
